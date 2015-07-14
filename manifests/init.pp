@@ -56,11 +56,13 @@ class bifrost (
   file { '/opt/stack/bifrost/playbooks/inventory/group_vars/all':
     ensure  => present,
     content => template('bifrost/group_vars_all.erb'),
+    require => Vcsrepo['/opt/stack/bifrost'],
   }
 
   file { '/opt/stack/bifrost/baremetal.json':
     ensure  => present,
     content => template('bifrost/baremetal.json.erb'),
+    require => Vcsrepo['/opt/stack/bifrost'],
   }
 }
 
