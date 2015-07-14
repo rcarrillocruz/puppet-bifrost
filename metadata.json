@@ -1,0 +1,13 @@
+{
+  "name": "openstackinfra-bifrost",
+  "version": "0.0.1",
+  "author": "OpenStack CI",
+  "summary": "Puppet module to install and configure Bifrost",
+  "license": "Apache 2.0",
+  "source": "git://git.openstack.org/openstack-infra/puppet-bifrost.git",
+  "project_page": "",
+  "issues_url": "",
+  "dependencies": [
+    {"name":"openstackci/vcsrepo","version_requirement":">= 0.0.8"}
+  ]
+}
